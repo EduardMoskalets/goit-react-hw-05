@@ -1,0 +1,5 @@
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://api.themoviedb.org';
+
+const TOKEN_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMDNlN2FiYTQwMWVhODkxM2FlN2ZiMWY2ODUzZDRlMiIsIm5iZiI6MTcyMzkxNTk2NS44MjIwMTIsInN1YiI6IjY2YzBkYmVkYWYzZTJiNGMzNmFkNjE0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gklpMzc7wnVi6XvqammNpGg6lrnmqREfc9cFyOUYrOQ';
