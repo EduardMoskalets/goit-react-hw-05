@@ -3,7 +3,7 @@ import { NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
 import { getMovieById } from '../../movies-api';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import Loader from '../../components/Loader/Loader';
-import css from './MovieDetailsPage.module.css';
+import css from './MoviesDetailsPage.module.css';
 
 export default function MovieDetailsPage() {
   const { movieId } = useParams();

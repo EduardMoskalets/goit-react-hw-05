@@ -3,7 +3,7 @@ import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loader from '../Loader/Loader';
 import { useLocation, useParams } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
-import css from './MovieReviews.module.css';
+import css from './MoviesReviews.module.css';
 
 export default function MovieReviews() {
   const { movieId } = useParams();

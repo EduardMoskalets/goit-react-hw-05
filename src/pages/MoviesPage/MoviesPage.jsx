@@ -4,6 +4,7 @@ import { getMovies } from '../../movies-api';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import MovieList from '../../components/MovieList/MovieList';
 import Loader from '../../components/Loader/Loader';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 
 export default function MoviesPage() {
   const [movies, setMovies] = useState([]);

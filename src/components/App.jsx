@@ -6,14 +6,14 @@ import './App.module.css'
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const MoviesPage = lazy(() => import('../pages/MoviesPage/MoviesPage'));
-const MovieDetailsPage = lazy(() => import('../pages/MovieDetailsPage/MovieDetailsPage'));
+const MovieDetailsPage = lazy(() => import('../pages/MoviesDetailsPage/MovieDetailsPage'));
 const MovieCast = lazy(() => import('../components/MovieCast/MovieCast'));
 const MovieReviews = lazy(() => import('../components/MovieReviews/MovieReviews'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 
 export default function App() {
   return (
-    <div className={css.container}>
+    <div className={CSS.container}>
       <Navigation />
 
       <Suspense fallback={<div>Loading page...</div>}>
