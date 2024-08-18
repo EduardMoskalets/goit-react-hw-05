@@ -13,7 +13,7 @@ const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 
 export default function App() {
   return (
-    <div className={CSS.container}>
+    <div className={css.container}>
       <Navigation />
 
       <Suspense fallback={<div>Loading page...</div>}>
