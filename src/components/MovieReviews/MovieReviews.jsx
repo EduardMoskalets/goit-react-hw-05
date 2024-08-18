@@ -1,6 +1,6 @@
 import { getReviewsById } from '../../movies-api';
-import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-import Loader from '../../components/Loader/Loader';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import Loader from '../Loader/Loader';
 import { useLocation, useParams } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import css from './MovieReviews.module.css';
@@ -34,3 +34,22 @@ export default function MovieReviews() {
   if (reviews === null) {
     return <Loader />;
   }
+
+  if (reviews.length === 0) {
+    return <div>We don't have reviews for this movie.</div>;
+  }
+
+  return (
+    <div>
+      {isError && <ErrorMessage />}
+      <ul className={css.reviews_list}>
+        {reviews.map(review => (
+          <li key={review.id}>
+            <h3>Author: {review.author}</h3>
+            <p> {review.content}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
